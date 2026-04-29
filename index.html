@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hardik Mittal — Python & Django Developer specializing in scalable web applications and Machine Learning. View my projects, skills, and get in touch.">
+  <meta name="keywords" content="Hardik Mittal, Python Developer, Django, Machine Learning, Portfolio, Web Developer">
+  <meta name="author" content="Hardik Mittal">
+  <meta property="og:title" content="Hardik Mittal — Developer Portfolio">
+  <meta property="og:description" content="Python & Django developer building scalable web apps and exploring Machine Learning.">
+  <meta property="og:type" content="website">
+  <title>Hardik Mittal — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Hardik<span class="logo-dot">.</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-title">Hardik <span class="gradient-text">Mittal</span></h1>
+        <p class="hero-subtitle">
+          <span class="typing-wrapper">
+            <span id="typed-text" class="typed-text"></span>
+            <span class="cursor">|</span>
+          </span>
+        </p>
+        <p class="hero-description">
+          I am a Python developer specializing in Django. I build scalable web applications and I am currently exploring Machine Learning to bring data intelligence to the web.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Codewithmittalhardik/" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:mittalhardik2007@gmail.com" aria-label="Email" class="social-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay-1">
+        <div class="code-window">
+          <div class="window-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="window-title">hardik.py</span>
+          </div>
+          <pre class="window-body"><code><span class="kw">class</span> <span class="cls">Developer</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="str">"Hardik Mittal"</span>
+        <span class="param">self</span>.role = <span class="str">"Python Developer"</span>
+        <span class="param">self</span>.skills = [
+            <span class="str">"Django"</span>, <span class="str">"Flask"</span>,
+            <span class="str">"ML"</span>, <span class="str">"Streamlit"</span>
+        ]
+        <span class="param">self</span>.passion = <span class="str">"Building cool stuff"</span>
+
+    <span class="kw">def</span> <span class="fn">say_hello</span>(<span class="param">self</span>):
+        <span class="kw">return</span> <span class="str">"Let's build something amazing!"</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════ ABOUT SECTION ═══════════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag"><i class="fa-solid fa-user"></i> Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I am a backend-focused software developer with a strong command of <strong>Python</strong>. I specialize in building secure and efficient web systems using the <strong>Django</strong> framework.</p>
+          <p>Driven by a curiosity for data and automation, I am actively expanding my skillset into <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong> to create smarter, data-driven solutions.</p>
+          <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, and continuously learning to stay at the cutting edge of software development.</p>
+        </div>
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="stat-info">
+              <h3>5+</h3>
+              <p>Projects Built</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="stat-info">
+              <h3>10+</h3>
+              <p>Technologies</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="stat-info">
+              <h3>ML</h3>
+              <p>Exploring AI</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stat-info">
+              <h3>∞</h3>
+              <p>Always Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SKILLS SECTION ═══════════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> What I work with</p>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category reveal reveal-delay-1">
+          <h3 class="category-title"><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-solid fa-fire"></i>
+              <span>Django</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-flask-vial"></i>
+              <span>Flask</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal reveal-delay-2">
+          <h3 class="category-title"><i class="fa-solid fa-database"></i> Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-solid fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-leaf"></i>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-3">
+          <h3 class="category-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Vercel</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-server"></i>
+              <span>Render</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS SECTION ═══════════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag"><i class="fa-solid fa-folder-open"></i> My recent work</p>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3 class="project-title">BioGenerator</h3>
+          <p class="project-desc">AI‑powered Instagram caption & bio generator that helps users craft engaging content quickly.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://biogenerator-euia.onrender.com" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="project-title">Spam Detector</h3>
+          <p class="project-desc">Real-time SMS/Email Spam Classifier built with Python, Scikit-Learn, and Streamlit.</p>
+          <div class="project-tags">
+            <span class="tag">ML</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">NLP</span>
+          </div>
+          <div class="project-links">
+            <a href="https://email-sms-spamdetection.onrender.com/" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-icon">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <h3 class="project-title">Movie Recommendations</h3>
+          <p class="project-desc">An AI-powered discovery tool that leverages machine learning to match users with their next favorite film.</p>
+          <div class="project-tags">
+            <span class="tag">ML</span>
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://movie-recommendation-system-unz6.onrender.com" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="project-title">Car Price Predictor</h3>
+          <p class="project-desc">A machine learning web app that utilizes historical data to accurately predict the resale value of used cars.</p>
+          <div class="project-tags">
+            <span class="tag">ML</span>
+            <span class="tag">Django</span>
+            <span class="tag">Data Science</span>
+          </div>
+          <div class="project-links">
+            <a href="https://car-price-predictor-sp86.onrender.com/" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-icon">
+            <i class="fa-solid fa-file-pdf"></i>
+          </div>
+          <h3 class="project-title">Chat PDF Reader</h3>
+          <p class="project-desc">DocuGPT — An AI-powered document assistant that transforms static PDFs into interactive conversations.</p>
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">LLM</span>
+            <span class="tag">HuggingFace</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mittalhardik-chatpdf.hf.space" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag"><i class="fa-solid fa-paper-plane"></i> Reach out</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Connect</h3>
+          <p>Open to freelance work, internships, and collabs. Tell me what you're building — I'll tell you how I can help.</p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:mittalhardik2007@gmail.com">mittalhardik2007@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/Codewithmittalhardik/" target="_blank" rel="noopener">Codewithmittalhardik</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal reveal-delay-1">
+          <h3>Send Me a Message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="form-message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">Hardik<span class="logo-dot">.</span></a>
+        <p>&copy; 2025 Hardik Mittal. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Codewithmittalhardik/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:mittalhardik2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#hero" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
