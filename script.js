@@ -92,17 +92,43 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-/* ═══════════════════ CONTACT FORM ═══════════════════ */
+/* ═══════════════════ CONTACT FORM (Web3Forms) ═══════════════════ */
 const form = document.getElementById("contact-form");
-form.addEventListener("submit", (e) => {
+const toast = document.getElementById("form-toast");
+const submitBtn = document.getElementById("submit-btn");
+
+function showToast(message, isSuccess) {
+  toast.textContent = message;
+  toast.className = "form-toast " + (isSuccess ? "toast-success" : "toast-error");
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 4000);
+}
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const name = document.getElementById("form-name").value;
-  const email = document.getElementById("form-email").value;
-  const message = document.getElementById("form-message").value;
-  const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  window.location.href = `mailto:mittalhardik2007@gmail.com?subject=${subject}&body=${body}`;
-  form.reset();
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+  try {
+    const formData = new FormData(form);
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      showToast("✅ Message sent successfully!", true);
+      form.reset();
+    } else {
+      showToast("❌ Something went wrong. Try again.", false);
+    }
+  } catch (err) {
+    showToast("❌ Network error. Please try again.", false);
+  }
+
+  submitBtn.disabled = false;
+  submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
 });
 
 /* ═══════════════════ SMOOTH SCROLL FOR ALL ANCHORS ═══════════════════ */

@@ -382,7 +382,11 @@
         </div>
         <div class="contact-form-wrapper reveal reveal-delay-1">
           <h3>Send Me a Message</h3>
-          <form id="contact-form" class="contact-form">
+          <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+            <input type="checkbox" name="botcheck" style="display:none">
             <div class="form-group">
               <input type="text" id="form-name" name="name" placeholder="Your Name" required>
             </div>
@@ -392,10 +396,11 @@
             <div class="form-group">
               <textarea id="form-message" name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">
+            <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
               <i class="fa-solid fa-paper-plane"></i> Send Message
             </button>
           </form>
+          <div id="form-toast" class="form-toast"></div>
         </div>
       </div>
     </div>

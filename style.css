@@ -303,6 +303,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .form-group textarea { resize: vertical; min-height: 130px; }
 .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); }
+.skill-svg-icon { transition: var(--transition); }
+.skill-card:hover .skill-svg-icon { transform: scale(1.15); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none !important; }
+
+/* Toast */
+.form-toast {
+  margin-top: 12px; padding: 14px 20px; border-radius: var(--radius-sm);
+  font-size: 0.9rem; font-weight: 600; text-align: center;
+  opacity: 0; transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.form-toast.show { opacity: 1; transform: translateY(0); }
+.toast-success { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+.toast-error { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
 
 /* ═══════════════════ FOOTER ═══════════════════ */
 .footer {
