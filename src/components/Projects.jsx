@@ -9,7 +9,7 @@ const PROJECTS = [
     icon: 'fa-solid fa-heart-pulse',
     description: 'Developed a machine learning pipeline using Random Forest classifier to predict likelihood of diabetes with 92.16% accuracy.',
     tags: ['Python', 'Scikit-Learn', 'Pandas', 'Matplotlib'],
-    liveUrl: 'https://github.com/Codewithmittalhardik/',
+    liveUrl: 'https://github.com/codewithmittalhardik/diabetes_project',
   },
   {
     title: 'Car Price Prediction Model',
