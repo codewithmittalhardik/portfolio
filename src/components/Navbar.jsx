@@ -46,7 +46,7 @@ export function Navbar({ activeSection, isScrolled }) {
     <nav id="navbar" className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#hero" onClick={(e) => handleNavClick(e, 'hero')} className="nav-logo">
-          Hardik<span className="logo-dot">.</span>
+          Hardik<span className="logo-dot"></span>
         </a>
         <button
           id="nav-toggle"

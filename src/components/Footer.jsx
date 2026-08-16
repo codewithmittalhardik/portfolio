@@ -12,7 +12,7 @@ export function Footer() {
       <div className="container">
         <div className="footer-content">
           <a href="#hero" onClick={scrollToHero} className="footer-logo">
-            Hardik<span className="logo-dot">.</span>
+            Hardik<span className="logo-dot"></span>
           </a>
           <p>&copy; {new Date().getFullYear()} Hardik Mittal. All rights reserved.</p>
           <div className="footer-socials">
