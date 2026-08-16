@@ -48,7 +48,7 @@ const PROJECTS = [
     category: 'AI & LLM',
     icon: 'fa-solid fa-file-pdf',
     description: 'DocuGPT — An AI-powered document assistant that transforms static PDFs into interactive conversations.',
-    tags: ['AI', 'LLM', 'HuggingFace'],
+    tags: ['AI', 'LLM', 'HuggingFace', 'Django'],
     liveUrl: 'https://mittalhardik-chatpdf.hf.space',
   },
 ];
